@@ -6,7 +6,9 @@ const outputName = document.querySelector('#name-output');
  });
 
 inputName.addEventListener("blur", () => {
-    if (outputName.textContent == "") {
+    if (outputName.textContent === "") {
          outputName.textContent = "Anonymous!";
      }
 });
+
+
