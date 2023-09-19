@@ -1,7 +1,7 @@
 const input = document.querySelector('input');
 
 input.addEventListener("blur", () => {
-  if (input.value.length >= input.dataset.length) {
+  if (input.value.length === Math.floor(input.dataset.length)) {
     input.classList.add("valid");
     input.classList.remove("invalid");
   } else {
